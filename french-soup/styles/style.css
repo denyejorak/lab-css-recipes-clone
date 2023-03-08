@@ -1,9 +1,83 @@
 /*Some necessary adjustments*/
 h1, body, html, main {
-  margin: 0;
+  margin: 0 auto;
+  width: 700 px;
+  color: #555b5e;
 }
+body{
+  line-height: 30px;
+ 
+  /* background-color: black; */
+}
+
 /*Import the font and set the default size*/
 html {
   font-family: 'Open Sans', sans-serif;
   font-size: 18px
+}
+
+h1{
+  background-image: url(/lab-css-recipes-clone/french-soup/images/soup.jpg) ;
+  height: 400px;
+  background-size: 100%;
+  width: 700px;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  line-height: 350px;
+  font-weight: 100;
+  color: white;
+  font-size: 50px;
+ 
+}
+.intro{
+  
+  width: 700px;
+  display: block;
+  text-align: justify;
+
+}
+
+.ingredients ul {
+  list-style-type: none;
+  padding: 0;
+}
+ol {
+  /* 1. Remove the default list style */  
+  list-style: none;
+  padding: 0;
+}
+
+ol > li {
+  /* 2. Create a custom list counter */  
+  counter-increment: listcounter;
+ 
+}
+
+ol > li::before {
+  /*3. Set the new style for the list markers */
+  content: counter(listcounter) ")";
+}
+ img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 50px 50px;
+  height: 70px;
+}
+ul{
+  padding: 0;
+}
+ol{
+  padding: 0;
+}
+h4, p, ol, ul, hr{
+margin: 20px 50px;
+}
+.intro img{
+height: 60px;
+}
+.ingredients img{
+height: 60px
+;
 }
